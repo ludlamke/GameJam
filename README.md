@@ -1,2 +1,2 @@
 # GameJam
-transmition
+transmission
