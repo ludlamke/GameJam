@@ -121,7 +121,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 38111880}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: plugPointM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 38111879}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.03, z: -3.53}
+  m_LocalPosition: {x: 0, y: -0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 81886818}
@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 81886815}
   - component: {fileID: 81886814}
   - component: {fileID: 81886813}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mail
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -185,6 +185,9 @@ MonoBehaviour:
   player2: {fileID: 893558496}
   Cord: {x: 0, y: 0, z: 0}
   ydistance: 0
+  pla:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!143 &81886814
 CharacterController:
   m_ObjectHideFlags: 0
@@ -279,7 +282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 439139252}
   - component: {fileID: 439139253}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlugPointF
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -293,7 +296,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 439139251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.15, y: 0.02, z: -3.53}
+  m_LocalPosition: {x: 0.15, y: 0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 893558502}
@@ -589,7 +592,7 @@ GameObject:
   - component: {fileID: 893558499}
   - component: {fileID: 893558498}
   - component: {fileID: 893558497}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: femail
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -620,6 +623,9 @@ MonoBehaviour:
   player2: {fileID: 81886812}
   Cord: {x: 0, y: 0, z: 0}
   ydistance: 0
+  pla:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!143 &893558498
 CharacterController:
   m_ObjectHideFlags: 0
