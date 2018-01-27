@@ -16,7 +16,11 @@ public class Player_Controler : MonoBehaviour {
     private bool canPlug;
     public float maxDistance;
     public bool loosCord;
-   // public bool genm;
+    public GameObject player2;
+    public Vector3 Cord;
+    public float ydistance;
+    public LayerMask pla;
+    // public bool genm;
     // Use this for initialization
     void Start () {
 
@@ -28,6 +32,29 @@ public class Player_Controler : MonoBehaviour {
 	void Update () {
         if(!pluged && gender == "mail" && otherPlayer.pluged == true)
         {
+
+
+
+
+          /*  Cord = new Vector3(player2.transform.position.x - transform.position.x, player2.transform.position.y - transform.position.y, player2.transform.position.z);
+           
+            Ray ray = new Ray(transform.position, Cord);
+            RaycastHit hit;
+       
+            if (Physics.Raycast(ray, out hit, maxDistance))
+            {
+                
+                    loosCord = true;
+                
+
+
+            }
+            else
+            {
+                loosCord = false;
+            }
+            Debug.DrawRay(ray.origin, Cord, Color.red); */
+
             yreset = moveValosity.y;
 
             moveValosity = (transform.right * Input.GetAxisRaw("Horizontal") * playerSpeed);
@@ -59,6 +86,8 @@ public class Player_Controler : MonoBehaviour {
 
         if (!pluged && gender == "femail" && otherPlayer.pluged == true)
         {
+
+
             yreset = moveValosity.y;
 
             moveValosity = (transform.right * Input.GetAxisRaw("Fehorizontal") * playerSpeed);
@@ -86,15 +115,44 @@ public class Player_Controler : MonoBehaviour {
             }
         }
 
-        if(Physics.Raycast(transform.position, otherPlayer.transform.position, maxDistance))
+       // ydistance = Mathf.Abs(transform.position.y) - Mathf.Abs(player2.transform.position.y);
+
+      //  if(ydistance < 0)
+       // {
+          // ydistance = Mathf.Abs(ydistance);
+      //  }
+
+        Cord = new Vector3(player2.transform.position.x - transform.position.x, player2.transform.position.y - transform.position.y, player2.transform.position.z - transform.position.z);
+
+        Ray ray = new Ray(transform.position, Cord);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, maxDistance, pla))
         {
+            if(hit.collider.tag == "Player")
+            {
             loosCord = true;
+              print("" + hit.distance);
+            }
+            
         }
-        else
+        else 
         {
             loosCord = false;
         }
+
         
+        
+        if(gender == "mail")
+        {
+            Debug.DrawRay(ray.origin, Cord, Color.red);
+        }
+
+        if (gender == "femail")
+        {
+            Debug.DrawRay(ray.origin, Cord, Color.blue);
+        }
+
     }
 
     public void OnTriggerEnter(Collider other)
@@ -119,6 +177,8 @@ public class Player_Controler : MonoBehaviour {
             // otherPlayer.pluged = false;
             canPlug = true;
         }
+
+
     }
 
     public void OnTriggerExit(Collider other)
