@@ -149,8 +149,11 @@ MonoBehaviour:
   moveValosity: {x: 0, y: 0, z: 0}
   cc: {fileID: 0}
   gravty: 5
+  pluged: 0
   gender: mail
   otherPlayer: {fileID: 893558497}
+  maxDistance: 5
+  loosCord: 0
 --- !u!143 &81886814
 CharacterController:
   m_ObjectHideFlags: 0
@@ -439,8 +442,11 @@ MonoBehaviour:
   moveValosity: {x: 0, y: 0, z: 0}
   cc: {fileID: 0}
   gravty: 5
+  pluged: 1
   gender: femail
   otherPlayer: {fileID: 81886813}
+  maxDistance: 5
+  loosCord: 0
 --- !u!143 &893558498
 CharacterController:
   m_ObjectHideFlags: 0

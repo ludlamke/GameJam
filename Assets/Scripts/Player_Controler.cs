@@ -10,10 +10,12 @@ public class Player_Controler : MonoBehaviour {
     public CharacterController cc;
     public float gravty;
     private float yreset;
-    private bool pluged;
+    public bool pluged;
     public string gender;
     public Player_Controler otherPlayer;
     private bool canPlug;
+    public float maxDistance;
+    public bool loosCord;
    // public bool genm;
     // Use this for initialization
     void Start () {
@@ -83,6 +85,16 @@ public class Player_Controler : MonoBehaviour {
                 otherPlayer.pluged = false;
             }
         }
+
+        if(Physics.Raycast(transform.position, otherPlayer.transform.position, maxDistance))
+        {
+            loosCord = true;
+        }
+        else
+        {
+            loosCord = false;
+        }
+        
     }
 
     public void OnTriggerEnter(Collider other)
