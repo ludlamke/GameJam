@@ -33,12 +33,12 @@ public class Player_Controler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(!pluged && gender == "mail" && otherPlayer.pluged == true)
+
+        
+        if (!pluged && gender == "mail" && otherPlayer.pluged == true)
         {
 
-
-            anim.SetFloat("speed", moveValosity.x);
-            anim.SetBool("jump", cc.isGrounded);
+                    
           /*  Cord = new Vector3(player2.transform.position.x - transform.position.x, player2.transform.position.y - transform.position.y, player2.transform.position.z);
            
             Ray ray = new Ray(transform.position, Cord);
@@ -90,7 +90,7 @@ public class Player_Controler : MonoBehaviour {
         if (!pluged && gender == "femail" && otherPlayer.pluged == true)
         {
 
-
+            
             yreset = moveValosity.y;
 
             moveValosity = (transform.right * Input.GetAxisRaw("Fehorizontal") * playerSpeed);
@@ -118,12 +118,14 @@ public class Player_Controler : MonoBehaviour {
             }
         }
 
-       // ydistance = Mathf.Abs(transform.position.y) - Mathf.Abs(player2.transform.position.y);
+        // ydistance = Mathf.Abs(transform.position.y) - Mathf.Abs(player2.transform.position.y);
 
-      //  if(ydistance < 0)
-       // {
-          // ydistance = Mathf.Abs(ydistance);
-      //  }
+        //  if(ydistance < 0)
+        // {
+        // ydistance = Mathf.Abs(ydistance);
+        //  }
+        anim.SetFloat("speed", Mathf.Abs(moveValosity.x));
+        anim.SetBool("jump", cc.isGrounded);
 
         Cord = new Vector3(player2.transform.position.x - transform.position.x, player2.transform.position.y - transform.position.y, player2.transform.position.z - transform.position.z);
 
