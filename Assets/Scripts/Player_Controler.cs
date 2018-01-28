@@ -22,6 +22,8 @@ public class Player_Controler : MonoBehaviour {
     public LayerMask pla;
     public Animator anim;
     public bool stop;
+    public bool onPlatform;
+    public PlatformBehavior platfrom;
     // public bool genm;
     // Use this for initialization
     void Start () {
@@ -169,9 +171,12 @@ public class Player_Controler : MonoBehaviour {
             loosCord = false;
         }
 
-        
-        
-        if(gender == "mail")
+        if (Input.GetButtonDown("Fire2") && onPlatform)
+        {
+            platfrom.activated = true;
+        }
+
+        if (gender == "mail")
         {
             Debug.DrawRay(ray.origin, Cord, Color.red);
         }
@@ -206,6 +211,11 @@ public class Player_Controler : MonoBehaviour {
             canPlug = true;
         }
 
+        if(other.tag == "platform")
+        {
+            platfrom = other.GetComponentInParent<PlatformBehavior>();    //  GetComponent<PlatformBehavior>();
+            onPlatform = true;
+        }
 
     }
 
@@ -227,6 +237,18 @@ public class Player_Controler : MonoBehaviour {
             //pluged = true;
             // otherPlayer.pluged = false;
             canPlug = false;
+        }
+
+        if (other.tag == "platform")
+        {
+            //platfrom = other.GetComponentInParent<PlatformBehavior>();    //  GetComponent<PlatformBehavior>();
+            onPlatform = false;
+
+            if(platfrom)
+            {
+                platfrom.activated = false;
+                platfrom = null;
+            }
         }
     }
 }

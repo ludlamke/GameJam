@@ -28,7 +28,7 @@ public class PlatformBehavior : MonoBehaviour {
 		startPos = transform.position;
 		endPos = new Vector3 (transform.position.x, transform.position.y + heightChange, transform.position.z);
 		maxDistanceDelta = speedPlat * Time.deltaTime;
-
+        atStart = true;
 		FMODUnity.RuntimeManager.AttachInstanceToGameObject(Platform, GetComponent<Transform>(), GetComponent<Rigidbody>());
 		Platform.start();
 	}
@@ -41,12 +41,22 @@ public class PlatformBehavior : MonoBehaviour {
 		if (activated) {
 			if (atStart) {
 				transform.position = Vector3.MoveTowards (transform.position, endPos, maxDistanceDelta);
-				atStart = false;
-				loop = false;
-			}
+				
+                if(transform.position.y >= endPos.y)
+                {
+                    atStart = false;
+                    activated = false;
+                }
+                loop = false;
+            }
 			else {
 				transform.position = Vector3.MoveTowards (transform.position, startPos, maxDistanceDelta);
-				atStart = true;
+                if (transform.position.y <= startPos.y)
+                {
+                    atStart = true;
+                    activated = false;
+                }
+
 				loop = true;
 			}
 
