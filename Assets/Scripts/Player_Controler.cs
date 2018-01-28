@@ -69,10 +69,12 @@ public class Player_Controler : MonoBehaviour {
             if(moveValosity.x > 0)
             {
                 transform.GetChild(0).rotation = Quaternion.Euler(transform.rotation.x, -90, transform.rotation.z);
+                transform.GetChild(0).position = new Vector3(transform.GetChild(0).position.x, transform.GetChild(0).position.y, -2.060748f);
             }
             else if(moveValosity.x < 0)
             {
                 transform.GetChild(0).rotation = Quaternion.Euler(transform.rotation.x, 90, transform.rotation.z);
+                transform.GetChild(0).position = new Vector3(transform.GetChild(0).position.x, transform.GetChild(0).position.y, 1.860677f);
             }
 
             if (cc.isGrounded)
@@ -107,6 +109,17 @@ public class Player_Controler : MonoBehaviour {
             moveValosity = moveValosity.normalized * playerSpeed;
 
             moveValosity.y = yreset;
+
+            if (moveValosity.x > 0)
+            {
+                transform.GetChild(0).rotation = Quaternion.Euler(transform.rotation.x, -90, transform.rotation.z);
+                transform.GetChild(0).position = new Vector3(transform.GetChild(0).position.x, transform.GetChild(0).position.y, 0.04759313f);
+            }
+            else if (moveValosity.x < 0)
+            {
+                transform.GetChild(0).rotation = Quaternion.Euler(transform.rotation.x, 90, transform.rotation.z);
+                transform.GetChild(0).position = new Vector3(transform.GetChild(0).position.x, transform.GetChild(0).position.y, 0.1157973f);
+            }
 
             if (cc.isGrounded)
             {
