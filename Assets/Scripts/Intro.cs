@@ -13,6 +13,7 @@ public class Intro : MonoBehaviour {
     public bool aGameByActive;
     public bool nameActive;
     public bool specialThanksActive;
+    public bool introDone;
 
     public GameObject aGameBy;
     public GameObject mike;
@@ -24,6 +25,7 @@ public class Intro : MonoBehaviour {
     public GameObject intro;
     public GameObject specialThanks;
     public GameObject brooks;
+    public GameObject title;
 
     public Image introImage;
 
@@ -33,6 +35,7 @@ public class Intro : MonoBehaviour {
         aGameByActive = true;
         nameActive = true;
         specialThanksActive = true;
+        introDone = false;
 	}
 	
 	// Update is called once per frame
@@ -103,6 +106,7 @@ public class Intro : MonoBehaviour {
         }
         if(introEndTimer + 6 < timer)
         {
+            introDone = true;
             intro.SetActive(false);
         }
     }
