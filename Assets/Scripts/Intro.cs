@@ -14,6 +14,7 @@ public class Intro : MonoBehaviour {
     public bool nameActive;
     public bool specialThanksActive;
     public bool introDone;
+    public bool titleScreen;
 
     public GameObject aGameBy;
     public GameObject mike;
@@ -36,6 +37,7 @@ public class Intro : MonoBehaviour {
         nameActive = true;
         specialThanksActive = true;
         introDone = false;
+        titleScreen = true;
 	}
 	
 	// Update is called once per frame
@@ -109,5 +111,18 @@ public class Intro : MonoBehaviour {
             introDone = true;
             intro.SetActive(false);
         }
+
+
+        if (introDone && titleScreen)
+        {
+            title.SetActive(true);
+            if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow))
+            {
+                titleScreen = false;
+                title.SetActive(false);
+            }
+        }
+
+
     }
 }

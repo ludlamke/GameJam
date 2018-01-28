@@ -372,7 +372,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1804174528633844, guid: 1e2b59e43a196ef43a79affb8e21f429, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1929785361883826, guid: 1e2b59e43a196ef43a79affb8e21f429, type: 2}
       propertyPath: m_IsActive
@@ -552,3 +552,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1972376047 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1044111904538400, guid: 1e2b59e43a196ef43a79affb8e21f429,
+    type: 2}
+  m_PrefabInternal: {fileID: 1368609549}
+--- !u!222 &1972376048
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1972376047}
