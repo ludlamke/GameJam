@@ -66,6 +66,15 @@ public class Player_Controler : MonoBehaviour {
 
             moveValosity.y = yreset;
 
+            if(moveValosity.x > 0)
+            {
+                transform.GetChild(0).rotation = Quaternion.Euler(transform.rotation.x, -90, transform.rotation.z);
+            }
+            else if(moveValosity.x < 0)
+            {
+                transform.GetChild(0).rotation = Quaternion.Euler(transform.rotation.x, 90, transform.rotation.z);
+            }
+
             if (cc.isGrounded)
             {
                 moveValosity.y = 0f;

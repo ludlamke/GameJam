@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: 0ba14ba60fd9d0e4b92a7b577d35f79d
+timeCreated: 1517094330
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Plug_Bot_04:Chest_Ctrl
+    100004: Plug_Bot_04:Chest_JNT
+    100006: Plug_Bot_04:COG
+    100008: Plug_Bot_04:COG_Ctrl
+    100010: Plug_Bot_04:Head_Ctrl
+    100012: Plug_Bot_04:Head_JNT
+    100014: Plug_Bot_04:HIp_Ctrl
+    100016: Plug_Bot_04:HIp_JNT
+    100018: Plug_Bot_04:L_Ankle_JNT
+    100020: Plug_Bot_04:L_Foot_IK_Handle
+    100022: Plug_Bot_04:L_Foot_JNT
+    100024: Plug_Bot_04:L_Heel_Roll
+    100026: Plug_Bot_04:L_Knee_Ctrl
+    100028: Plug_Bot_04:L_Knee_JNT
+    100030: Plug_Bot_04:L_Leg_Ctrl
+    100032: Plug_Bot_04:L_Leg_IK_Handle
+    100034: Plug_Bot_04:L_Thigh_JNT
+    100036: Plug_Bot_04:L_Tip_Toe
+    100038: Plug_Bot_04:L_Toe_IK_Handle
+    100040: Plug_Bot_04:L_Toe_JNT
+    100042: Plug_Bot_04:Master_Ctrl
+    100044: Plug_Bot_04:Neck_JNT
+    100046: Plug_Bot_04:Plug_Man_Mesh
+    100048: Plug_Bot_04:R_Ankle_JNT
+    100050: Plug_Bot_04:R_Foot_IK_Handle
+    100052: Plug_Bot_04:R_Foot_JNT
+    100054: Plug_Bot_04:R_Heel_Roll
+    100056: Plug_Bot_04:R_Knee_Ctrl
+    100058: Plug_Bot_04:R_Knee_JNT
+    100060: Plug_Bot_04:R_Leg_Ctrl
+    100062: Plug_Bot_04:R_Leg_IK_Handle
+    100064: Plug_Bot_04:R_Thigh_JNT
+    100066: Plug_Bot_04:R_Tip_Toe
+    100068: Plug_Bot_04:R_Toe_IK_Handle
+    100070: Plug_Bot_04:R_Toe_JNT
+    400000: //RootNode
+    400002: Plug_Bot_04:Chest_Ctrl
+    400004: Plug_Bot_04:Chest_JNT
+    400006: Plug_Bot_04:COG
+    400008: Plug_Bot_04:COG_Ctrl
+    400010: Plug_Bot_04:Head_Ctrl
+    400012: Plug_Bot_04:Head_JNT
+    400014: Plug_Bot_04:HIp_Ctrl
+    400016: Plug_Bot_04:HIp_JNT
+    400018: Plug_Bot_04:L_Ankle_JNT
+    400020: Plug_Bot_04:L_Foot_IK_Handle
+    400022: Plug_Bot_04:L_Foot_JNT
+    400024: Plug_Bot_04:L_Heel_Roll
+    400026: Plug_Bot_04:L_Knee_Ctrl
+    400028: Plug_Bot_04:L_Knee_JNT
+    400030: Plug_Bot_04:L_Leg_Ctrl
+    400032: Plug_Bot_04:L_Leg_IK_Handle
+    400034: Plug_Bot_04:L_Thigh_JNT
+    400036: Plug_Bot_04:L_Tip_Toe
+    400038: Plug_Bot_04:L_Toe_IK_Handle
+    400040: Plug_Bot_04:L_Toe_JNT
+    400042: Plug_Bot_04:Master_Ctrl
+    400044: Plug_Bot_04:Neck_JNT
+    400046: Plug_Bot_04:Plug_Man_Mesh
+    400048: Plug_Bot_04:R_Ankle_JNT
+    400050: Plug_Bot_04:R_Foot_IK_Handle
+    400052: Plug_Bot_04:R_Foot_JNT
+    400054: Plug_Bot_04:R_Heel_Roll
+    400056: Plug_Bot_04:R_Knee_Ctrl
+    400058: Plug_Bot_04:R_Knee_JNT
+    400060: Plug_Bot_04:R_Leg_Ctrl
+    400062: Plug_Bot_04:R_Leg_IK_Handle
+    400064: Plug_Bot_04:R_Thigh_JNT
+    400066: Plug_Bot_04:R_Tip_Toe
+    400068: Plug_Bot_04:R_Toe_IK_Handle
+    400070: Plug_Bot_04:R_Toe_JNT
+    2100000: lambert1
+    4300000: Plug_Bot_04:Plug_Man_Mesh
+    7400000: Plug_Bot_Walk_Cycle
+    9500000: //RootNode
+    13700000: Plug_Bot_04:Plug_Man_Mesh
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
