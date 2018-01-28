@@ -18,13 +18,16 @@ public class Player_Controler : MonoBehaviour {
     public bool loosCord;
     public GameObject player2;
     public Vector3 Cord;
-    public float ydistance;
+    //public float ydistance;
     public LayerMask pla;
+    public Animator anim;
+    public bool stop;
     // public bool genm;
     // Use this for initialization
     void Start () {
 
         cc = GetComponent<CharacterController>();
+        
         
     }
 	
@@ -34,8 +37,8 @@ public class Player_Controler : MonoBehaviour {
         {
 
 
-
-
+            anim.SetFloat("speed", moveValosity.x);
+            anim.SetBool("jump", cc.isGrounded);
           /*  Cord = new Vector3(player2.transform.position.x - transform.position.x, player2.transform.position.y - transform.position.y, player2.transform.position.z);
            
             Ray ray = new Ray(transform.position, Cord);
@@ -58,7 +61,7 @@ public class Player_Controler : MonoBehaviour {
             yreset = moveValosity.y;
 
             moveValosity = (transform.right * Input.GetAxisRaw("Horizontal") * playerSpeed);
-
+            Debug.Log("" + moveValosity);
             moveValosity = moveValosity.normalized * playerSpeed;
 
             moveValosity.y = yreset;
@@ -132,7 +135,7 @@ public class Player_Controler : MonoBehaviour {
             if(hit.collider.tag == "Player")
             {
             loosCord = true;
-              print("" + hit.distance);
+              //print("" + hit.distance);
             }
             
         }
