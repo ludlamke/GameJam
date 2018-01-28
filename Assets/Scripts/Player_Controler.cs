@@ -148,6 +148,7 @@ public class Player_Controler : MonoBehaviour {
         //  }
         anim.SetFloat("speed", Mathf.Abs(moveValosity.x));
         anim.SetBool("jump", cc.isGrounded);
+        anim.SetBool("pluged", pluged);
 
         Cord = new Vector3(player2.transform.position.x - transform.position.x, player2.transform.position.y - transform.position.y, player2.transform.position.z - transform.position.z);
 
